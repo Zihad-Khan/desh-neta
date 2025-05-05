@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desh Neta</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="bg-gray-800 h-screen  text-white text-[18px]">
+    <header class="text-center h-[12vh] text-white py-2 w-full bg-gray-950" >
+        <h3 class="text-2xl font-bold">Desh Neta Rubaet</h3>
+        <p>Desh neta sobar...</p>
+    </header>
+    <div class="flex items-center justify-center h-[88vh]">
+        <div class="hero sm:w-[40vw] w-[80vw] bg-gray-500 border-white rounded-lg flex flex-col items-center justify-center p-4">
+            <p class="text-center ">Desh Neta has more number of side chicks than your expected percetage in <b>Electrical Mechine-I</b> course. Don't believe? Let's guess...</p>
+            <form action="#" class="my-3">
+                <p class="mt-2"><label for="guess">Enter your guess:  </label><input type="number"id="guess" placeholder="Enter guesses between 1~100..." class="p-1 ml-3 font-bold text-xl rounded-lg border-2 border-gray-50 bg-gray-500"></p>
+                <br>
+               <p class="text-center"><input type="submit" value="Check"  id="check-btn" class="bg-gray-950 text-white font-bold py-2 px-4 rounded-lg hover:bg-gray-700 cursor-pointer"></p>
+            </form>
+            <p id="result" class="bg-gray-700 text-2xl text-white"></p>
+            <p id="previous">Previous guesses: <span id="prev-guesses" class="bg-gray-600 p-[2px]"> </span></p>
+            <p id="remaining">Remaining guesses: <span id="rem-guesses" class="bg-gray-600 p-[2px]">5</span></p>
+            <p class="text-center mt-2.5"><span id="start-over" class="p-2 bg-gray-950 text-white font-bold rounded-lg hover:bg-gray-700 cursor-pointer hidden">Start Over</span></p>
+        </div>
+    </div>
+    <script src="./src/script.js">
+    </script>
+</body>
+</html>
