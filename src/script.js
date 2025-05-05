@@ -49,9 +49,9 @@ function checkMatch(userGuess) {
     }
 }
 function predictGuessLevel(userGuess){
-    if((chicks-userGuess) > 10){
+    if((chicks-userGuess) > 5){
         result.innerHTML = `You are guessing too low!`;
-    }else if((chicks-userGuess) < -10){
+    }else if((chicks-userGuess) < -5){
         result.innerHTML = `You are guessing too high!`;
     }else{
         result.innerHTML = `You are guessing so close!`;
