@@ -30,6 +30,7 @@ function checkMatch(userGuess) {
         result.innerHTML = `Wow! You guessed the correct! Neta has ${chicks} chicks.`;
         input.setAttribute('disabled','');
         checkBtn.setAttribute('disabled','');
+        chicks = Math.floor(Math.random() * 51) + 50;
         createStartOverBtn();
     }else{
         predictGuessLevel(userGuess);
@@ -53,8 +54,10 @@ function predictGuessLevel(userGuess){
         result.innerHTML = `You are guessing too low!`;
     }else if((chicks-userGuess) < -5){
         result.innerHTML = `You are guessing too high!`;
-    }else{
-        result.innerHTML = `You are guessing so close!`;
+    }else if((chicks-userGuess) > -5 && (chicks-userGuess) < 0){
+        result.innerHTML = `You guessed a little bit high!`;
+    }else if((chicks-userGuess) < 5 && (chicks-userGuess) > 0){
+        result.innerHTML = `You guessed a little bit low!`;
     }
 }
 function addToPrev(userGuess){
